@@ -71,7 +71,7 @@ namespace Terehov.OrdersAPI.Controllers
 
             foreach(var total in order.Products)
             {
-                totalPrice = total.Price * total.Quantity;
+                totalPrice =+ total.Price * total.Quantity;
             }
 
             order.Total = totalPrice;
@@ -91,7 +91,7 @@ namespace Terehov.OrdersAPI.Controllers
 
             foreach (var total in order.Products)
             {
-                totalPrice = total.Price * total.Quantity;
+                totalPrice =+ total.Price * total.Quantity;
             }
 
             existingOrder.Products = order.Products;
